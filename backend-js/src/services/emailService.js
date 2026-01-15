@@ -115,14 +115,14 @@ class EmailService {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz Results - Recallo</title>
+  <title>Quiz Results - Aura</title>
 </head>
 <body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f3f4f6;">
   <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
     <div style="background-color: #ffffff; border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); overflow: hidden;">
       <!-- Header -->
       <div style="background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); padding: 30px; text-align: center;">
-        <h1 style="color: #ffffff; margin: 0; font-size: 28px;">📚 Recallo</h1>
+        <h1 style="color: #ffffff; margin: 0; font-size: 28px;">📚 Aura</h1>
         <p style="color: #e0e7ff; margin: 10px 0 0 0; font-size: 16px;">Quiz Results</p>
       </div>
       
@@ -174,10 +174,10 @@ class EmailService {
       <!-- Footer -->
       <div style="background-color: #f9fafb; padding: 20px; text-align: center; border-top: 1px solid #e5e7eb;">
         <p style="color: #6b7280; font-size: 12px; margin: 0;">
-          This email was sent by Recallo - Your AI Learning Assistant
+          This email was sent by Aura - Your AI Learning Assistant
         </p>
         <p style="color: #9ca3af; font-size: 11px; margin: 10px 0 0 0;">
-          © ${new Date().getFullYear()} Recallo. All rights reserved.
+          © ${new Date().getFullYear()} Aura. All rights reserved.
         </p>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import recalloLogo from "../assets/recallo.png";
+import auraLogo from "../assets/recallo.png";
 import { EqualApproximately } from "lucide-react";
 
 const Header = () => {
@@ -29,8 +29,8 @@ const Header = () => {
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
             <img
-              src={recalloLogo}
-              alt="recallo_logo logo"
+              src={auraLogo}
+              alt="aura_logo logo"
               className="img-fluid logo"
               
             />

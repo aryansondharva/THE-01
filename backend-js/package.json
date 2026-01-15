@@ -1,7 +1,7 @@
 {
   "name": "backend-js",
   "version": "1.0.0",
-  "description": "JavaScript/Node.js backend for Recallo - migrated from Python/Flask",
+  "description": "JavaScript/Node.js backend for Aura - migrated from Python/Flask",
   "main": "src/server.js",
   "type": "module",
   "scripts": {

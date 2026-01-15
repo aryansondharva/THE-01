@@ -10,13 +10,13 @@ const Footer = () => {
             <p className="text-white ovr mt-3 mb-2 ">
               Your journey matters. Reach out anytime
             </p>
-            <a href="mailto:recallo.ai@gmail.com">
-              <h2 className="grad_text mb-5">recallo.ai@gmail.com</h2>
+            <a href="mailto:aura.ai@gmail.com">
+              <h2 className="grad_text mb-5">aura.ai@gmail.com</h2>
             </a>
           </div>
         </div>
         <p className="text-center mb-0">
-          &copy; {new Date().getFullYear()} Recallo. All rights reserved.
+          &copy; {new Date().getFullYear()} Aura. All rights reserved.
         </p>
       </div>
     </footer>

@@ -9,7 +9,7 @@ import aivis from "../assets/ai-assistant.png";
 import Typewriter from "./Typewriter";
 import ChatInput from "./ChatInput";
 import supabase from "../utils/supabaseClient";
-import RecalloVisual3D from "../components/RecalloVisual3D";
+import AuraVisual3D from "../components/AuraVisual3D";
 import History from "./History";
 
 const ChatInterface = () => {
@@ -146,7 +146,7 @@ const ChatInterface = () => {
     const processingMsg = {
       id: "loading-spinner",
       type: "ai",
-      text: "Recallo is processing...",
+      text: "Aura is processing...",
       isProcessing: true,
     };
 
@@ -284,9 +284,9 @@ const ChatInterface = () => {
 
       <div className="chat-response-section" ref={chatContainerRef} style={{ flexGrow: 1, overflowY: "auto", padding: "10px", marginBottom: "50px" }}>
         <div className="chat-header text-center mb-4">
-          <RecalloVisual3D />
+          <AuraVisual3D />
           <h2 className="grad_text mt-2">
-            Hello{user?.user_metadata?.full_name ? `, ${user.user_metadata.full_name}` : ""}! Ask Recallo
+            Hello{user?.user_metadata?.full_name ? `, ${user.user_metadata.full_name}` : ""}! Ask Aura
           </h2>
         </div>
 
@@ -311,11 +311,11 @@ const ChatInterface = () => {
               <div>
                 <strong className="d-flex align-items-center mb-3 ai_response">
                   <img src={aivis} alt="ai_visualiser" className="img-fluid visual_img rec_img" />
-                  Recallo:
+                  Aura:
                 </strong>
                 {msg.isProcessing ? (
                   <div className="processing-spinner">
-                    <FontAwesomeIcon icon={faSpinner} spin /> Recallo is processing...
+                    <FontAwesomeIcon icon={faSpinner} spin /> Aura is processing...
                   </div>
                 ) : (
                   <Typewriter key={msg.id} text={msg.text} shouldAnimate={isLastAiMessage(index, msg)} />

@@ -4,7 +4,7 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import RecalloVisual3D from "../components/RecalloVisual3D";
+import AuraVisual3D from "../components/AuraVisual3D";
 import AboutSection from "../components/AboutSection";
 import cta from "../assets/recall_cta.webp";
 import galib from "../assets/galib.webp";
@@ -30,7 +30,7 @@ const Developers = () => {
             <div className="col-md-12">
               <div className="hero_content text-center">
                 <div className="d-flex justify-content-center align-items-center mb-3">
-                  <RecalloVisual3D />
+                  <AuraVisual3D />
                 </div>
                 {/* <img src={aivis} alt="ai_visualiser" className="img-fluid visual_img"/> */}
                 <h1 className="grad_text">Meet the Team</h1>
@@ -52,7 +52,7 @@ const Developers = () => {
           {/* ZIAD */}
           <div className="col-md-4">
             <div className="ft_box dev_box">
-              <img src={ziad} alt="recallo_logo" className="img-fluid rbc" />
+              <img src={ziad} alt="aura_logo" className="img-fluid rbc" />
               <h4>Wahidul Islam Ziad</h4>
               <p>
                 Email:{" "}
@@ -98,7 +98,7 @@ const Developers = () => {
           {/* GALIB */}
           <div className="col-md-4">
             <div className="ft_box dev_box">
-              <img src={galib} alt="recallo_logo" className="img-fluid rbc" />
+              <img src={galib} alt="aura_logo" className="img-fluid rbc" />
               <h4>Abdur Rahman Galib</h4>
               <p>
                 Email:{" "}
@@ -137,7 +137,7 @@ const Developers = () => {
           {/* OMOR */}
           <div className="col-md-4">
             <div className="ft_box dev_box">
-              <img src={faruq} alt="recallo_logo" className="img-fluid rbc" />
+              <img src={faruq} alt="aura_logo" className="img-fluid rbc" />
               <h4>Omor Faruq</h4>
               <p>
                 Email:{" "}
@@ -161,7 +161,7 @@ const Developers = () => {
               </button>
               {expanded.omor && (
                 <ul className="list-group dev_cont">
-                  <li>Overall Design and Page Structure for Recallo</li>
+                  <li>Overall Design and Page Structure for Aura</li>
                   <li>Chat Interface Integration</li>
                   <li>Buffer Memory System for Persistent AI Context</li>
                   <li>Trello-Style To-Do List for Study Management</li>
@@ -184,7 +184,7 @@ const Developers = () => {
         <div className="row text-center">
           <img
             src={cta}
-            alt="recallo_logo"
+            alt="aura_logo"
             className="img-fluid rbc rbc2 rbc3"
           />
         </div>

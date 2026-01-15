@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 
-const RecalloVisual3D = () => {
+const AuraVisual3D = () => {
   const containerRef = useRef();
   const meshRef = useRef();
   const uniformsRef = useRef({ u_time: { value: 0 } });
@@ -123,4 +123,4 @@ const fragmentShader = `
   }
 `;
 
-export default RecalloVisual3D;
+export default AuraVisual3D;

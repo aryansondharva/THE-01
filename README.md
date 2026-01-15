@@ -1,14 +1,14 @@
-# 📚 Recallo: AI-Driven Spaced Repetition & Recall Booster for Academic Success
+# 📚 Aura: AI-Driven Spaced Repetition & Recall Booster for Academic Success
 Version: 1.0.1
-Recallo is an intelligent platform that leverages AI and the science of spaced repetition to help students retain and recall information effectively. This monorepo contains the complete frontend, backend, and AI engine setup.
+Aura is an intelligent platform that leverages AI and the science of spaced repetition to help students retain and recall information effectively. This monorepo contains the complete frontend, backend, and AI engine setup.
 
 ## 🚀 Quick Start Guide
 
 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/Recallo.git
-cd Recallo
+git clone https://github.com/your-username/Aura.git
+cd Aura
 ```
 
 2️⃣ Run the Setup Script
@@ -32,7 +32,7 @@ If you're using VS Code and Python extension must be installed, do the following
 5. Navigate to:
 
 ```python
-Recallo/ai-engine/.venv/Scripts/python.exe
+Aura/ai-engine/.venv/Scripts/python.exe
 ```
 6. Click Select Interpreter
 7. ✅ You’re all set! VS Code will now use the correct environment.
@@ -67,5 +67,5 @@ python app.py
 ```
 
 ## ✅ Everything Ready?
-Your Recallo AI platform should now be running and accessible locally.
+Your Aura AI platform should now be running and accessible locally.
 Use it to boost memory retention, improve academic performance, and learn smarter — not harder.

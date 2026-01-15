@@ -33,9 +33,9 @@ const AboutSection = () => {
 
   return (
     <section className="about_section text-center cool-split">
-      <h3 className="grad_text">About Recallo</h3>
+      <h3 className="grad_text">About Aura</h3>
       <h2 className="mb-2 mt-2">
-        Recallo is an intelligent, AI powered learning companion designed to
+        Aura is an intelligent, AI powered learning companion designed to
         revolutionize how you retain knowledge.
       </h2>
     </section>

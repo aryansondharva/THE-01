@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 // import aivis from "../assets/ai-assistant.png";
-import RecalloVisual3D from "../components/RecalloVisual3D";
+import AuraVisual3D from "../components/AuraVisual3D";
 import AboutSection from "../components/AboutSection";
-import recalloLogo from "../assets/recallo.png";
-import recallo_banner from "../assets/recallo_banner.webp";
+import auraLogo from "../assets/recallo.png";
+import aura_banner from "../assets/recallo_banner.webp";
 import cta from "../assets/recall_cta.webp"
 import {
   BrainCircuit,
@@ -27,21 +27,21 @@ const Home = () => {
             <div className="col-md-12">
               <div className="hero_content text-center">
                 <div className="d-flex justify-content-center align-items-center mb-3">
-                  <RecalloVisual3D />
+                  <AuraVisual3D />
                 </div>
                 {/* <img src={aivis} alt="ai_visualiser" className="img-fluid visual_img"/> */}
                 <h1 className="grad_text">
-                  Recallo: Your AI Study Partner for Smarter Retention
+                  Aura: Your AI Study Partner for Smarter Retention
                 </h1>
                 <p className="pt-4 pb-4">
-                  Recallo is an AI-driven learning companion that enhances
+                  Aura is an AI-driven learning companion that enhances
                   memory retention through personalized spaced repetition and
                   intelligent recall strategies perfect for students,
                   professionals, and lifelong learners.
                 </p>
                 <div className="hero_button">
                   <Link to="/chat" className="btn btn-cs me-3">
-                    Go to Recallo
+                    Go to Aura
                   </Link>
                   <Link to="/signin" className="btn btn-cs me-3">
                     Sign Up Today
@@ -61,19 +61,19 @@ const Home = () => {
           </div>
           <div className="col-md-12 col-xl-6">
             <img
-              src={recalloLogo}
-              alt="recallo_logo"
+              src={auraLogo}
+              alt="aura_logo"
               className="img-fluid logo mb-4"
             />
 
             <h4 className="text-white ovr">
               Leveraging advanced spaced repetition and adaptive memory
-              techniques, Recallo helps students and lifelong learners identify{" "}
+              techniques, Aura helps students and lifelong learners identify{" "}
               <span className="hl">what topics they struggle with</span> and
               provides personalized, interactive reminders whether through
               quizzes, visuals, or bite sized notes.{" "}
               <span className="hl">Say goodbye to cramming and guesswork.</span>{" "}
-              Recallo makes your study sessions smarter, more focused, and less
+              Aura makes your study sessions smarter, more focused, and less
               stressful by ensuring you{" "}
               <span className="hl">
                 review the right material at the right time.
@@ -82,8 +82,8 @@ const Home = () => {
           </div>
           <div className="col-md-12 col-xl-6">
             <img
-              src={recallo_banner}
-              alt="recallo_logo"
+              src={aura_banner}
+              alt="aura_logo"
               className="img-fluid rbc"
             />
           </div>
@@ -175,7 +175,7 @@ const Home = () => {
         <div className="row text-center">
            <img
               src={cta}
-              alt="recallo_logo"
+              alt="aura_logo"
               className="img-fluid rbc rbc2 rbc3"
             />
         </div>

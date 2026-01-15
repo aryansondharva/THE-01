@@ -1,6 +1,6 @@
 import React from "react";
 import { ListTodo, FileSliders, ListTree, Notebook, ChartPie, BookOpenCheck, FolderArchive, History, User, Cog  } from 'lucide-react';
-import recalloLogo from "../assets/recallo.png";
+import auraLogo from "../assets/recallo.png";
 import { Link, useLocation } from "react-router-dom";
 import { EqualApproximately } from "lucide-react";
 import { MessageCircle } from "lucide-react";
@@ -36,8 +36,8 @@ const Sidebar = ({
         {isOpen && (
           <a href="/">
             <img
-              src={recalloLogo}
-              alt="Recallo Logo"
+              src={auraLogo}
+              alt="Aura Logo"
               className="img-fluid logo"
               style={{ maxWidth: "120px" }}
             />
@@ -145,7 +145,7 @@ const Sidebar = ({
         isOpen && (
           <div className="sidebar-login-message text-center mt-4">
             <p className="mb-4 text-start">
-              Recallo is much more than that. <br />
+              Aura is much more than that. <br />
               <strong>Sign in to start your study journey!</strong>
             </p>
             <div className="d-flex flex-column gap-2">

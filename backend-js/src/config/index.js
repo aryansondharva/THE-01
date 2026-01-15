@@ -21,7 +21,7 @@ const config = {
   // CORS configuration
   corsAllowOrigin: process.env.CORS_ALLOW_ORIGIN || process.env.FRONTEND_URL || 'http://localhost:5173',
   frontendUrl: process.env.FRONTEND_URL || 'http://localhost:5173',
-  frontendProd: process.env.FRONTEND_PROD || 'https://recallo.faruqweb.com',
+  frontendProd: process.env.FRONTEND_PROD || 'https://aura.faruqweb.com',
   
   // Supabase configuration
   supabaseUrl: process.env.SUPABASE_URL,
