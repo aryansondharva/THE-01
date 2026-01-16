@@ -38,16 +38,14 @@ const Progress = () => {
       try {
 
         // 🔁 Trigger weak topic update first
-        await fetch("http://localhost:5000/api/update-weak-topics", {
+        await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/update-weak-topics`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ user_id: userId }),
         });
 
         // ✅ Then fetch progress
-        const response = await fetch(
-          `http://localhost:5000/api/progress/${userId}`
-        );
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/progress/${userId}`);
         if (response.ok) {
           const { attempts, topics } = await response.json();
 

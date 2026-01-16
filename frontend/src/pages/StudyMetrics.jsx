@@ -89,8 +89,7 @@ const StudyMetrics = () => {
     }
 
     try {
-      const response = await fetch(
-        "http://localhost:5000/api/generate_flashcards",
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/generate_flashcards`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -148,8 +147,7 @@ const StudyMetrics = () => {
         }
 
         // ✅ Call this only if userId exists
-        const response = await fetch(
-          "http://localhost:5000/api/update-weak-topics",
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/update-weak-topics`,
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },

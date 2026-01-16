@@ -18,10 +18,6 @@ Aura combines AI and spaced repetition science to help students learn smarter, n
 - Schedule reviews at optimal intervals for memory retention
 - Track your progress and adapt to your learning patterns
 
-## 🖼️ Screenshots
-
-![Aura Banner](./frontend/src/assets/recallo_banner.webp)
-
 ## 🛠️ Tech Stack
 
 | Layer | Technologies |

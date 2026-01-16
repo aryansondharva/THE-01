@@ -45,7 +45,7 @@ const Exam = () => {
     }
     setLoadingQuestions(true);
     try {
-      const res = await fetch("http://localhost:5000/api/generate-questions", {
+      const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/generate-questions`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -136,7 +136,7 @@ const Exam = () => {
           submitted_answers: formattedAnswers,
         });
 
-        const response = await fetch("http://localhost:5000/api/submit-answers", {
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/submit-answers`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

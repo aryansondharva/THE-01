@@ -49,7 +49,7 @@ const Topics = () => {
     setLoadingTopics(true);
     try {
       // 1. Trigger backend update of weak topics
-      await fetch("http://localhost:5000/api/update-weak-topics", {
+      await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/update-weak-topics`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

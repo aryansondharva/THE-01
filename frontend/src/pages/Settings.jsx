@@ -34,7 +34,7 @@ const Settings = () => {
 
   const fetchSettings = async () => {
     try {
-      const response = await fetch(`http://127.0.0.1:5000/api/notification-settings/${userId}`);
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/notification-settings/${userId}`);
       if (response.ok) {
         const data = await response.json();
         setSettings(data);
@@ -48,7 +48,7 @@ const Settings = () => {
 
   const fetchTopics = async () => {
     try {
-      const response = await fetch(`http://127.0.0.1:5000/api/topics/${userId}`);
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/topics/${userId}`);
       if (response.ok) {
         const data = await response.json();
         setTopics(data);
@@ -87,7 +87,7 @@ const Settings = () => {
     setMessage("");
 
     try {
-      const response = await fetch(`http://127.0.0.1:5000/api/notification-settings/${userId}`, {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/notification-settings/${userId}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

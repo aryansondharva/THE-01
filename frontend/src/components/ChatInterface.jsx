@@ -58,7 +58,7 @@ const ChatInterface = () => {
 
   const fetchConversations = async (userId) => {
     try {
-      const response = await fetch(`http://127.0.0.1:5000/api/conversations?user_id=${userId}`);
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/conversations?user_id=${userId}`);
       if (response.ok) {
         const data = await response.json();
         setConversations(data);
@@ -72,7 +72,7 @@ const ChatInterface = () => {
     if (!userId) return null;
     
     try {
-      const response = await fetch("http://127.0.0.1:5000/api/conversations", {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/conversations`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ user_id: userId }),
@@ -96,7 +96,7 @@ const ChatInterface = () => {
 
   const handleDeleteAndStartNewChat = async (conversationId) => {
     try {
-      await fetch(`http://127.0.0.1:5000/api/conversations/${conversationId}`, {
+      await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/conversations/${conversationId}`, {
         method: "DELETE",
       });
       setConversations(prev => prev.filter(c => c.conversation_id !== conversationId));
@@ -115,7 +115,7 @@ const ChatInterface = () => {
   const handleSelectConversation = async (convId) => {
     setCurrentConv(convId);
     try {
-      const response = await fetch(`http://127.0.0.1:5000/api/conversations/${convId}/logs`);
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/conversations/${convId}/logs`);
       if (response.ok) {
         const logs = await response.json();
         const convertedMessages = logs.flatMap((log, i) => [
@@ -158,7 +158,7 @@ const ChatInterface = () => {
       const requestBody = { message: input, user_id: userId };
       if (currentConv) requestBody.conversation_id = currentConv;
 
-      const response = await fetch(`http://127.0.0.1:5000/api/${useDocumentMode ? "ask" : "chat"}`, {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/${useDocumentMode ? "ask" : "chat"}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(requestBody),
@@ -182,7 +182,7 @@ const ChatInterface = () => {
 
           // Fetch fresh conversations from backend after a delay
           setTimeout(() => {
-            fetch(`http://127.0.0.1:5000/api/conversations?user_id=${userId}`)
+            fetch(`${import.meta.env.VITE_BACKEND_URL}/api/conversations?user_id=${userId}`)
               .then(res => res.ok ? res.json() : Promise.reject("Failed to fetch"))
               .then(fresh => setConversations(fresh))
               .catch(console.error);
