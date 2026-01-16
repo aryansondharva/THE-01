@@ -22,6 +22,10 @@
       "dest": "backend-js/src/server.js"
     },
     {
+      "src": "/assets/(.*)",
+      "dest": "frontend/dist/assets/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "frontend/dist/$1"
     }
