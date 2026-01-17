@@ -15,25 +15,26 @@
   "routes": [
     {
       "src": "/",
-      "dest": "frontend/dist/index.html"
+      "dest": "/index.html"
     },
     {
       "src": "/api/(.*)",
-      "dest": "backend-js/src/server.js"
+      "dest": "/backend-js/src/server.js"
     },
     {
       "src": "/assets/(.*)",
-      "dest": "frontend/dist/assets/$1"
+      "dest": "/assets/$1"
     },
     {
       "src": "/[^.]+\/?$",
-      "dest": "frontend/dist/index.html"
+      "dest": "/index.html"
     },
     {
       "src": "/(.*)",
-      "dest": "frontend/dist/$1"
+      "dest": "/$1"
     }
   ],
   "env": {
     "NODE_ENV": "production"
-  }}
+  }
+}
