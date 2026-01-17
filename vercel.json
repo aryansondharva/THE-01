@@ -11,5 +11,25 @@
         "maxDuration": 30
       }
     }
-  ]
-}
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "backend-js/src/server.js"
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "frontend/dist/assets/$1"
+    },
+    {
+      "src": "/[^.]+\/?$",
+      "dest": "frontend/dist/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "frontend/dist/$1"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }}
