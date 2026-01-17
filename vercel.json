@@ -1,19 +1,12 @@
 {
   "version": 2,
-  "projects": [
+  "installCommand": "npm install && cd frontend && npm install && cd ../backend-js && npm install",
+  "buildCommand": "cd frontend && npm run build",
+  "outputDirectory": "frontend/dist",
+  "builds": [
     {
-      "slug": "frontend",
-      "root": "./frontend",
-      "buildCommand": "npm run build",
-      "outputDirectory": "./dist",
-      "installCommand": "npm install"
-    },
-    {
-      "slug": "backend-js",
-      "root": "./backend-js",
-      "buildCommand": "npm install",
-      "outputDirectory": "./src",
-      "installCommand": "npm install"
+      "src": "backend-js/src/server.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [

@@ -191,7 +191,7 @@ const Progress = () => {
     setAttemptData(null);
     try {
       const response = await fetch(
-        `http://localhost:5000/api/answer-analysis?topic_id=${topicId}&attempt_number=${attemptNumber}&user_id=${userId}`
+        `${import.meta.env.VITE_BACKEND_URL}/api/answer-analysis?topic_id=${topicId}&attempt_number=${attemptNumber}&user_id=${userId}`
       );
       if (response.ok) {
         const data = await response.json();

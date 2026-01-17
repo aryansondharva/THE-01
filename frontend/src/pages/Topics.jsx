@@ -95,7 +95,7 @@ const Topics = () => {
         formData.append("file", file);
         formData.append("user_id", userId);
 
-        xhr.open("POST", "http://localhost:5000/api/quiz-question");
+        xhr.open("POST", `${import.meta.env.VITE_BACKEND_URL}/api/quiz-question`);
 
         // 👇 Tracks file upload progress
         xhr.upload.onprogress = (event) => {
