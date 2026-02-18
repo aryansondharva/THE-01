@@ -1,3 +1,4 @@
+#this is the best.config.js
 export default {
   testEnvironment: 'node',
   testMatch: ['**/*.test.js'],
